@@ -1,10 +1,31 @@
 import React from "react";
+import { Container, Nav, Navbar } from "react-bootstrap";
 import logo from "../../assets/logonew.png";
 
 export default function TopNav() {
   return (
     <div>
-      <nav className="navbar navbar-expand-md navbar-light">
+      <Navbar bg="light" expand="lg">
+        <Container>
+          <Navbar.Brand href="#logo">
+            <img
+              src={logo}
+              className="figure-img img-fluid rounded img-thumbnail"
+              alt="Aavas"
+            />
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto">
+              <Nav.Link href="#skills">Skills</Nav.Link>
+              <Nav.Link href="#projects">Projects</Nav.Link>
+              <Nav.Link href="#about">About Me</Nav.Link>
+              <Nav.Link href="#contact">Contact</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+      {/* <nav className="navbar navbar-expand-md navbar-light">
         <div className="container">
           <a className="navbar-brand" href="logo">
             <img
@@ -53,7 +74,7 @@ export default function TopNav() {
             </ul>
           </div>
         </div>
-      </nav>
+      </nav> */}
     </div>
   );
 }

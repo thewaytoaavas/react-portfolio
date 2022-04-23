@@ -1,18 +1,20 @@
 import React from "react";
 import img2 from "../../assets/Aavas.jpeg";
+import second from "first";
+import { Row } from "react-bootstrap";
 
 export default function Hero() {
   return (
     <div>
       <div className="hero">
-        <div className="container">
-          <div className="row mt-5 py-3">
+        <Container>
+          <Row className="row mt-5 py-3">
             {/* <!-- =====below md takes 12 grid=====  --> */}
-            <div className="col-md-6 order-md-2 text-center">
+            <Col md="6" className="order-md-2 text-center">
               <img src={img2} alt="my photo" width="50%" />
-            </div>
+            </Col>
 
-            <div className="col-md-6 pt-5">
+            <Col className="col-md-6 pt-5">
               <h4>Hi ✌️I am Aavas Kunwar</h4>
               <h1>Full Stack Developer</h1>
               <p className="mt-5">
@@ -21,11 +23,10 @@ export default function Hero() {
                 from scratch at carroll, created more than 50 technical design
                 documents for different companies.
               </p>
-            </div>
-          </div>
-        </div>
+            </Col>
+          </Row>
+        </Container>
       </div>
-      Hero
     </div>
   );
 }

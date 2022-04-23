@@ -2,6 +2,7 @@ import React from "react";
 import P1 from "../../assets/small-business-concept-diagram-hand-260nw-264529766.jpeg";
 import P2 from "../../assets/business.jpeg";
 import P3 from "../../assets/money.jpeg";
+import { Container, Row, Col } from "react-bootstrap";
 
 export default function () {
   return (
@@ -15,15 +16,15 @@ export default function () {
         </div>
 
         <div className="proj-content">
-          <div className="container">
-            <div className="row mt-5 py-5">
-              <div className="col-md-6">
+          <Container className="mt-5">
+            <Row className="row mt-5 py-5">
+              <Col className="col-md-6">
                 <img
                   src={P1}
                   alt="portfolio"
                   className="img-fluid img-thumbnail"
                 />
-              </div>
+              </Col>
               <div className="col-md-6">
                 <h2>Hamro Gadgets</h2>
                 <div className="links">
@@ -45,22 +46,23 @@ export default function () {
                   are available online only.
                 </p>
               </div>
-            </div>
+            </Row>
 
-            <div className="row mt-5">
-              <div className="col-md-6 order-md-1">
+            <Row className="row mt-5">
+              <Col className="col-md-6 order-md-1">
                 <img
                   src={P2}
                   alt="portfolio"
                   className="img-fluid img-thumbnail"
                 />
-              </div>
+              </Col>
               <div className="col-md-6">
                 <h2>Hamro Business</h2>
                 <div className="links">
                   <a href="#" target="blank">
                     <i className="fab fa-github-alt"></i>
                   </a>
+                  {"  "}
                   <a href="#" target="blank">
                     <i className="fab fa-chrome"></i>{" "}
                   </a>
@@ -79,26 +81,26 @@ export default function () {
                   placeat quam quas nam.
                 </p>
               </div>
-            </div>
+            </Row>
 
-            <div className="row mt-5">
-              <div className="col-md-6">
+            <Row className="row mt-5">
+              <Col className="col-md-6">
                 <img
                   src={P3}
                   alt="portfolio"
                   className="img-fluid img-thumbnail"
                 />
-              </div>
-              <div className="col-md-6">
+              </Col>
+              <Col className="md-6">
                 <h2>Hamro Finance</h2>
-                <div className="links">
+                <Col className="links">
                   <a href="#" target="blank">
                     <i className="fab fa-github-alt"></i>
                   </a>
                   <a href="#" target="blank">
                     <i className="fab fa-chrome"></i>{" "}
                   </a>
-                </div>
+                </Col>
                 <div className="mt-3">Tech:HTML, CSS</div>
                 <p className="mt-1">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -112,9 +114,9 @@ export default function () {
                   magnam quis porro, sed sint tempora enim assumenda accusamus
                   placeat quam quas nam.
                 </p>
-              </div>
-            </div>
-          </div>
+              </Col>
+            </Row>
+          </Container>
         </div>
       </section>
     </div>

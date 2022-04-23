@@ -3,7 +3,7 @@ import React from "react";
 export default function Contact() {
   return (
     <div>
-      <section className="container">
+      <Container id="contact">
         <div id="contact" className="contact-icons rounded py-3">
           <div className="sec-title fs-1 bolder m-auto">Contact Me</div>
           <div className="icons-mt-5 fs-1 d-flex align-items-center justify-content-between px-5">
@@ -24,7 +24,7 @@ export default function Contact() {
             </a>
           </div>
         </div>
-      </section>
+      </Container>
     </div>
   );
 }
